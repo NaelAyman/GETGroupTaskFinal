@@ -1,0 +1,37 @@
+extends index
+block main-content
+  .login-page
+    .container
+      form.form.sign-level(action="sign-up3.html")
+        h2(class="wow fadeInDown") تسجيل جديد
+        h4(class="wow fadeInUp") بيانات عن التعليم
+        .form-group(class="wow fadeInUp" data-wow-delay="1s")
+          select(id="degree")
+            option(value="" disabled) الدرجة العلمية
+            option(value="") ثانوي
+            option(value="") بكارليوس
+          label(for="degree") الدرجة العلمية
+        .form-group(class="wow fadeInUp" data-wow-delay="0.2s")
+          select(id="university")
+            option(value="" disabled) اسم الجامعة
+            option(value="") جامعة القاهرة
+            option(value="") جامعة المنصورة
+          label(for="university") اسم الجامعة
+        .form-group(class="wow fadeInUp" data-wow-delay="0.4s")
+          select(id="total")
+            option(value="" disabled) التقدير العام
+            option(value="") جيد
+            option(value="") جيد جداً
+            option(value="") ممتاز
+          label(for="total") التقدير العام
+        .form-group.file(class="wow fadeInUp" data-wow-delay="0.6s")
+          label(for="image") إرفاق صور
+            span يمكنك إرفاق أكثر من صورة
+          .img-block
+            .gallery
+            .upload-img
+              input#gallery-photo-add(type="file" multiple="" accept="image/*" name="images[]")
+              i.far.fa-images(aria-hidden="true")
+        .flex-btn(class="wow fadeInUp" data-wow-delay="0.8s")
+          button.site-btn.more التالي
+            i.fas.fa-chevron-left

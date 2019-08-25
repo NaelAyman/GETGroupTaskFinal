@@ -1,0 +1,142 @@
+extends index-login
+block main-content
+  -
+    var copies = [
+      {
+        copyNumber: 'النسخة الأولي',
+        barcode: '4567891230',
+        typeClass: 'green',
+        typeIcon: 'fa-check-circle',
+        typeText: 'متواجدة',
+        copyLocation: 'الطابق  1 - القسم AA'
+      },
+      {
+        copyNumber: 'النسخة الثانية',
+        barcode: '4567891230',
+        typeClass: 'green',
+        typeIcon: 'fa-check-circle',
+        typeText: 'متواجدة',
+        copyLocation: 'الطابق  1 - القسم AB'
+      },
+      {
+        copyNumber: 'النسخة الثالثة',
+        barcode: '4567891230',
+        typeClass: 'red',
+        typeIcon: 'fa-times-circle',
+        typeText: 'محجوزة حتي 30-10-2019',
+        copyLocation: 'الطابق  1 - القسم AC'
+      },
+      {
+        copyNumber: 'النسخة الثالثة',
+        barcode: '4567891230',
+        typeClass: 'red',
+        typeIcon: 'fa-times-circle',
+        typeText: 'محجوزة حتي 30-10-2019',
+        copyLocation: 'الطابق  1 - القسم AC'
+      },
+      {
+        copyNumber: 'النسخة الثالثة',
+        barcode: '4567891230',
+        typeClass: 'red',
+        typeIcon: 'fa-times-circle',
+        typeText: 'محجوزة حتي 30-10-2019',
+        copyLocation: 'الطابق  1 - القسم AC'
+      }
+    ]
+
+  .books-details
+    .book-details
+      .container
+        ul.breadcumb(class="wow fadeInDown")
+          li
+            a(href="") الرئيسية > 
+          li
+            a(href="") ثقافةعامة > 
+          li
+            a(href="") الفئة العمرية 10-14 سنة > 
+          li 
+            a.default(href="")  عنوان الكتاب
+        .row
+          .col-xl-9.col-lg-8.col-sm-12
+            .details(class="wow fadeInRight" data-wow-delay="0.2s")
+              img(src="img/learning-english.png", alt="")
+              .text
+                h2 عنوان الكتاب
+                p.auther إسم الكاتب
+                .type
+                  h5 الفئة
+                  span ثقافة عامة
+                .summery
+                  h5 ملخص الكاتب
+                  p تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب 
+
+          .col-xl-3.col-lg-4.col-sm-12
+            .rate-section(class="wow fadeInLeft" data-wow-delay="0.4s")
+              h5 معدل التقييم
+              .star-rating
+                span.fa.fa-star(data-rating="1")
+                span.fa.fa-star(data-rating="2")
+                span.fa.fa-star-o(data-rating="3")
+                span.fa.fa-star-o(data-rating="4")
+                span.fa.fa-star-o(data-rating="5")
+                .info
+                  a(href="") 70 قارئ
+                  i.fas.fa-info-circle
+                input.rating-value(type="hidden" name="whatever1" value="2.56")
+              .rate-links
+                a.site-btn(href="") أضف تقييمك
+                a.site-btn.light(href="") مشاركة الكتاب
+    .book-copies
+      .container
+        h2(class="wow fadeInDown") نسخ الكتاب
+        .copy-slider.owl-carousel(class="wow fadeInUp" data-wow-delay= "0.2s")
+          each copy in copies
+            .item
+              h4 #{copy.copyNumber}
+              .code
+                p باركود
+                  span #{copy.barcode}
+              .code
+                p حالة النسخة
+                  span(class= copy.typeClass) 
+                    i.far(class= copy.typeIcon)
+                    | #{copy.typeText}
+              .code
+                p الموقع في المكتبة
+                  span #{copy.copyLocation}
+              a.site-btn(href="") إحجز النسخة
+    .addition-info 
+      .container 
+        h2(class="wow fadeInDown") معلومات إضافية عن الكتاب
+        .info(class="wow fadeInRight") 
+          p الرقم الدولي : 
+            span  xxxxxx
+          p تاريخ الطباعة : 
+            span  xxxxxx
+          p الرقم الدولي : 
+            span  xxxxxx
+          p رقم التصنيف : 
+            span  xxxxxx
+          p تاريخ الإضافة إلي المكتبة : 
+            span  xxxxxx
+    .comments
+      .container
+        h2(class="wow fadeInDown") التعليقات
+        form(action="" class="wow flipInX")
+          .form-group
+            input.form-control(type="text" placeholder="أضف تعليق ...")
+          button.site-btn أضف تعليق
+        .comments-blocks
+          .head(class="wow fadeInUp")
+            p المجموع (12)
+            a(href="") إظهار كل التعليقات
+          .blocks
+            - for(var i = 1; i <= 3; i++)
+              .block(class="wow fadeIn" data-wow-delay="0." + (i * 2) + "s")
+                .right-info
+                  i.fas.fa-user
+                  .details
+                    h5.title كميل أبو خليل
+                    p.text هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات هذا النص هو مثال لنص التعليقات 
+                    span.time 22 OCT 2018 4:23pm
+                a(href=""): i.fas.fa-ellipsis-v

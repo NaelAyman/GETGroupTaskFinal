@@ -1,0 +1,23 @@
+// Import Color
+@import 'sass/variables/colors';
+@import 'sass/variables/niceSelect';
+
+// Import Layout
+@import 'sass/layout/niceSelect';
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/global';
+
+// Import Components
+@import 'sass/components/main-slider';
+@import 'sass/components/books-show';
+@import 'sass/components/books-types';
+@import 'sass/components/centerAd';
+@import 'sass/components/index-footer';
+
+// Import Pages
+@import 'sass/pages/login';
+@import 'sass/pages/book-details';
+
+// Import Media
+@import 'sass/layout/media';

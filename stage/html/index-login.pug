@@ -1,0 +1,25 @@
+extends index
+block header
+  include layout/header-login
+
+block append nav-tabs
+  li.nav-item
+    a.nav-link(data-toggle="tab", href="#choose") اخترنا لك
+block append tab-content
+  .tab-pane.fade#choose
+    .row
+      each book in books
+        .col-lg-3.col-md-6
+          .book-box
+            .book-img
+              img(src="img/"+ book.image, alt="book name")
+            .book-content
+              .book-headTitle
+                h4.title #{book.title}
+                p.auther #{book.auther}
+              .book-btns
+                a.site-btn.light.r-15(href="") تفاصيل الكتاب
+                a.site-btn.r-15(href="") إحجز الكتاب
+
+block footer
+  include layout/footer-login

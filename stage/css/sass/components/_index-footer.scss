@@ -1,0 +1,31 @@
+.index-footer {
+  padding: 40px 0 20px;
+  position: relative;
+  overflow: hidden;
+  .block {
+    background-color: #f3f3f3;
+    height: 350px;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    textarea {
+      min-height: 150px;
+      resize: none;
+    }
+    &.work-time {
+      i {
+        font-size: 80px;
+        margin: 20px 0;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    &.fast-links {
+      a {
+        display: inline-block;
+        margin: 5px 0;
+        text-decoration: underline;
+      }
+    }
+  }
+}

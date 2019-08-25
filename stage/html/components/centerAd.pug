@@ -1,0 +1,60 @@
+-
+  var centerAds = [
+    {
+      image: 'slider2.jpg' , 
+      title: 'عنوان الإعلان',
+      shareDate: 'تاريخ نشر الإعلان',
+      text: 'ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان '
+    } , 
+    {
+      image: 'slider2.jpg' , 
+      title: 'عنوان الإعلان',
+      shareDate: 'تاريخ نشر الإعلان',
+      text: 'ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان '
+    } , 
+    {
+      image: 'slider2.jpg' , 
+      title: 'عنوان الإعلان',
+      shareDate: 'تاريخ نشر الإعلان',
+      text: 'ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان '
+    }
+  ]
+
+// Start Center 
+section
+  .books-show.centerAdv
+    h2(class="wow fadeInDown") المركز الإعلامي
+    .container
+      ul.nav.nav-tabs(class="wow fadeInUp")
+        li.nav-item
+          a.nav-link.active(data-toggle="tab", href="#adve") الإعلانات
+        li.nav-item
+          a.nav-link(data-toggle="tab", href="#tweet") التغريدات
+      
+      .tab-content(class="wow fadeInDown")
+        .tab-pane.active#adve
+          .slider.owl-carousel
+            each center in centerAds
+              .item
+                .slider-head
+                  h4 #{center.title}
+                  p.shareDate #{center.shareDate}
+                .slider-content  
+                  img(src="img/"+ center.image , alt="ads image")
+                  .caption
+                    p #{center.text}
+
+        .tab-pane.fade#tweet
+          .slider.owl-carousel
+            each center in centerAds
+              .item
+                .slider-head
+                  h4 #{center.title}
+                  p.shareDate #{center.shareDate}
+                .slider-content  
+                  img(src="img/"+ center.image , alt="ads image")
+                  .caption
+                    p #{center.text}
+
+      a.site-btn.light.r-15.more(href="" class="wow fadeIn" data-wow-delay="0.4s") تصفح المزيد
+// End Center

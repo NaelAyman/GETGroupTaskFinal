@@ -1,0 +1,73 @@
+/* Satrt Footer */
+
+footer {
+  .footer {
+    background-color: $flatBlue;
+    color: $white;
+    padding: 25px 0;
+    h5 {
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+/* End Footer */
+
+/* Start Fixed Footer */
+
+.fixed-footer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 62px;
+  line-height: 60px;
+  background-color: $flatBlue;
+  z-index: 8;
+  ul {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    li {
+      flex-grow: 1px;
+      list-style: none;
+      text-align: center;
+      a {
+        position: relative;
+        color: $white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+        opacity: 0.8;
+        span {
+          display: block;
+          &.noti {
+            position: absolute;
+            top: 12px;
+            right: 0;
+            display: block;
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            text-align: center;
+            font-size: 10px;
+            color: $flatBlue;
+            background-color: $white;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+      .active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* End Fixed Footer */

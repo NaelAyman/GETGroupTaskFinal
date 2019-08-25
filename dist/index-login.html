@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>GET Group Task</title>
+    <link rel="shortcut icon" href="img/logo-icon.png"/>
+    <link rel="stylesheet" href="css/master.min.css"/>
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Start Loader-->
+      <div class="overlay"></div>
+      <div class="loading">
+        <div class="loader"><img src="img/logo.png"/></div>
+      </div>
+      <!-- End Loader-->
+      <!-- Start Header-->
+      <header>
+        <div class="top-header">
+          <div class="container">
+            <ul class="content">
+              <li class="date"></li>
+              <li class="lang"> <i class="fas fa-globe"></i>English</li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <div class="container">
+            <div class="menu-content">
+              <div class="right-content"><a class="logo" href="index.html"><img src="img/logo.png"/></a>
+                <div class="nav-links">
+                  <ul>
+                    <li class="active"> <a href="index.html">الرئيسية</a></li>
+                    <li><a href="">عن المكتبة</a></li>
+                    <li> 
+                      <div class="dropdown-click"><a class="default" href="">فئات الكتب</a><i class="left-icon fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                          <ul>
+                            <li><a href="">فلسفة</a></li>
+                            <li><a href="">كيمياء</a></li>
+                            <li><a href="">فيزياء</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-click"><a class="default" href="">الأخبار</a><i class="left-icon fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                          <ul>
+                            <li><a href="">الأخبار المحلية</a></li>
+                            <li><a href="">الأخبار العالمية</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="">الفعاليات</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mob-collaps"><span></span><span></span><span></span></div>
+              <div class="user-tools">
+                <ul>
+                  <li><a class="search" href=""><i class="fas fa-search"></i></a></li>
+                  <li><a href=""><i class="far fa-comment-dots"></i><span class="noti">2</span></a></li>
+                  <li><a href=""><i class="far fa-bell"></i><span class="noti">3</span></a></li>
+                  <li><a class="login" href=""> <i class="fas fa-user"></i>نائل</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header-->
+      <!-- Start Search Form-->
+      <div class="search-form">
+        <form action="">
+          <div class="form-group">
+            <select class="Wide" name="Selectbox" aria-invalid="false">
+              <option value="First one">كل الفئات</option>
+              <option value="Second One">كل الفئات</option>
+              <option value="Third one">كل الفئات</option>
+            </select>
+            <input class="form-control" type="text" placeholder="بحث ..."/>
+            <button class="site-btn"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+      <!-- End Search Form-->
+      <div class="main-content">
+        <section>
+          <div class="main-slider">
+            <div class="slider owl-carousel">
+              <div class="item"><img src="img/slider2.jpg" alt="slider"/></div>
+              <div class="item"><img src="img/slider2.jpg" alt="slider"/></div>
+              <div class="item"><img src="img/slider2.jpg" alt="slider"/></div>
+            </div>
+            <div class="search-form wow fadeIn" data-wow-delay="0.2s">
+              <form action="">
+                <div class="form-group">
+                  <select class="Wide" name="Selectbox" aria-invalid="false">
+                    <option value="First one">كل الفئات</option>
+                    <option value="Second One">مكتبتي</option>
+                    <option value="Third one">كل الفئات</option>
+                  </select>
+                  <input class="form-control" type="text" placeholder="عنوان الكتاب ..."/>
+                  <button class="site-btn"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Start Books Show -->
+        <section>
+          <div class="books-show">
+            <h2 class="wow fadeInDown">تصفح الكتب</h2>
+            <div class="container">
+              <ul class="nav nav-tabs wow fadeInUp" data-wow-delay="0.2s">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#newer">وصل حديثاً</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#most">الأكثر تقييماً</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#choose">اخترنا لك</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="newer">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="book-box wow fadeIn" data-wow-delay="0.4s">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">نائل أيمن</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="book-details.html">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="book-box wow fadeIn" data-wow-delay="0.6s">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">محمد أحمد</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="book-details.html">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="book-box wow fadeIn" data-wow-delay="0.8s">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">حسن مسعد</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="book-details.html">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="book-box wow fadeIn" data-wow-delay="1s">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">مصطفي أبو بكر</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="book-details.html">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="most">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">نائل أيمن</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">محمد أحمد</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">حسن مسعد</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">مصطفي أبو بكر</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="choose">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">نائل أيمن</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">محمد أحمد</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">حسن مسعد</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="book-box">
+                        <div class="book-img"><img src="img/blog-1.jpg" alt="book name"/></div>
+                        <div class="book-content">
+                          <div class="book-headTitle">
+                            <h4 class="title">عنوان الكتاب</h4>
+                            <p class="auther">مصطفي أبو بكر</p>
+                          </div>
+                          <div class="book-btns"><a class="site-btn light r-15" href="">تفاصيل الكتاب</a><a class="site-btn r-15" href="">إحجز الكتاب</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><a class="site-btn light r-15 more wow fadeInUp" href="">تصفح المزيد</a>
+            </div>
+          </div>
+        </section>
+        <!-- End Books Show-->
+        <section>
+          <div class="books-types">
+            <div class="container">
+              <h2 class="wow fadeInDown">فئات الكتب</h2>
+              <div class="row types-content">
+                <div class="col-lg-4 col-md-6">
+                  <div class="type wow fadeInRight" data-wow-delay="0.2s"><i class="far fa-question-circle"></i>
+                    <p>الفلسفة</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="type wow fadeInTop" data-wow-delay="0.4s"><i class="fas fa-flask"></i>
+                    <p>الكيمياء</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="type wow fadeInLeft" data-wow-delay="0.6s"><i class="fab fa-react"></i>
+                    <p>الفيزياء</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="type wow fadeIn" data-wow-delay="0.8s"><i class="fab fa-react"></i>
+                    <p>الديانات</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="type wow fadeIn" data-wow-delay="1s"><i class="fab fa-react"></i>
+                    <p>الفيزياء</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="type wow fadeIn" data-wow-delay="1.2s"><i class="fab fa-react"></i>
+                    <p>الفيزياء</p>
+                  </div>
+                </div>
+              </div><a class="site-btn light r-15 more wow fadeIn" href="">تصفح المزيد</a>
+            </div>
+          </div>
+        </section>
+        <!-- Start Center -->
+        <section>
+          <div class="books-show centerAdv">
+            <h2 class="wow fadeInDown">المركز الإعلامي</h2>
+            <div class="container">
+              <ul class="nav nav-tabs wow fadeInUp">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#adve">الإعلانات</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tweet">التغريدات</a></li>
+              </ul>
+              <div class="tab-content wow fadeInDown">
+                <div class="tab-pane active" id="adve">
+                  <div class="slider owl-carousel">
+                    <div class="item">
+                      <div class="slider-head">
+                        <h4>عنوان الإعلان</h4>
+                        <p class="shareDate">تاريخ نشر الإعلان</p>
+                      </div>
+                      <div class="slider-content"> <img src="img/slider2.jpg" alt="ads image"/>
+                        <div class="caption">
+                          <p>ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="slider-head">
+                        <h4>عنوان الإعلان</h4>
+                        <p class="shareDate">تاريخ نشر الإعلان</p>
+                      </div>
+                      <div class="slider-content"> <img src="img/slider2.jpg" alt="ads image"/>
+                        <div class="caption">
+                          <p>ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="slider-head">
+                        <h4>عنوان الإعلان</h4>
+                        <p class="shareDate">تاريخ نشر الإعلان</p>
+                      </div>
+                      <div class="slider-content"> <img src="img/slider2.jpg" alt="ads image"/>
+                        <div class="caption">
+                          <p>ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tweet">
+                  <div class="slider owl-carousel">
+                    <div class="item">
+                      <div class="slider-head">
+                        <h4>عنوان الإعلان</h4>
+                        <p class="shareDate">تاريخ نشر الإعلان</p>
+                      </div>
+                      <div class="slider-content"> <img src="img/slider2.jpg" alt="ads image"/>
+                        <div class="caption">
+                          <p>ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="slider-head">
+                        <h4>عنوان الإعلان</h4>
+                        <p class="shareDate">تاريخ نشر الإعلان</p>
+                      </div>
+                      <div class="slider-content"> <img src="img/slider2.jpg" alt="ads image"/>
+                        <div class="caption">
+                          <p>ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="slider-head">
+                        <h4>عنوان الإعلان</h4>
+                        <p class="shareDate">تاريخ نشر الإعلان</p>
+                      </div>
+                      <div class="slider-content"> <img src="img/slider2.jpg" alt="ads image"/>
+                        <div class="caption">
+                          <p>ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان ملخص عن الإعلان </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><a class="site-btn light r-15 more wow fadeIn" href="" data-wow-delay="0.4s">تصفح المزيد</a>
+            </div>
+          </div>
+        </section>
+        <!-- End Center-->
+        <!-- Start Index Footer-->
+        <section>
+          <div class="index-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 md-6">
+                  <div class="block work-time wow fadeIn" data-wow-delay="0.2s">
+                    <h3 class="blockTitle">توقيت المكتبة</h3>
+                    <div class="block-content"><i class="far fa-clock"></i>
+                      <p class="days-work">من الأحد إلي الخميس</p>
+                      <p class="times-work">من 7 صباحاً إلي 2 مساءً</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 md-6">
+                  <div class="block form-contact wow fadeIn" data-wow-delay="0.4s">
+                    <h3 class="blockTitle">راسلنا</h3>
+                    <div class="block-content">
+                      <form action="">
+                        <div class="form-group">
+                          <label for="">أرسل مقترحاتك</label>
+                          <textarea class="form-control" placeholder="أرسل مقترحاتك"></textarea>
+                        </div>
+                        <button class="site-btn">أرسل</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 md-6">
+                  <div class="block fast-links wow fadeIn" data-wow-delay="0.6s">
+                    <h3 class="blockTitle">روابط سريعة</h3>
+                    <div class="block-content">
+                      <ul>
+                        <li><a href="">الرابط 1</a></li>
+                        <li><a href="">الرابط 2</a></li>
+                        <li><a href="">الرابط 3</a></li>
+                        <li><a href="">الرابط 4</a></li>
+                        <li><a href="">الرابط 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Index Footer-->
+      </div>
+      <!-- Start Footer-->
+      <footer>
+        <div class="footer wow fadeInUp" data-wow-delay="0.2s">
+          <div class="container">
+            <h5>Footer Area</h5>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer-->
+      <!-- Start Fixed Footer-->
+      <div class="fixed-footer">
+        <ul>
+          <li><a class="active" href="index-login.html"><i class="fas fa-home"></i></a></li>
+          <li class="search"><a href=""><i class="fas fa-search"></i></a></li>
+          <li><a href=""> <i class="far fa-comment-dots"></i><span class="noti">2</span></a></li>
+          <li><a href=""> <i class="far fa-bell"></i><span class="noti">3</span></a></li>
+          <li><a href=""> <i class="fas fa-user"></i></a></li>
+        </ul>
+      </div>
+      <!-- End Fixed Footer-->
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/scripts-min.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+</html>

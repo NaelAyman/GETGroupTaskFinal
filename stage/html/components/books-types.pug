@@ -1,0 +1,51 @@
+-
+  var types = [
+    {
+      icon: 'far fa-question-circle' ,
+      title: 'الفلسفة',
+      class: 'wow fadeInRight',
+      delay: '0.2s'
+    } , 
+    {
+      icon: 'fas fa-flask' ,
+      title: 'الكيمياء',
+      class: 'wow fadeInTop',
+      delay: '0.4s'
+    } , 
+    {
+      icon: 'fab fa-react' ,
+      title: 'الفيزياء',
+      class: 'wow fadeInLeft',
+      delay: '0.6s'
+    } , 
+    {
+      icon: 'fab fa-react' ,
+      title: 'الديانات',
+      class: 'wow fadeIn',
+      delay: '0.8s'
+    } , 
+    {
+      icon: 'fab fa-react' ,
+      title: 'الفيزياء',
+      class: 'wow fadeIn',
+      delay: '1s'
+    } , 
+    {
+      icon: 'fab fa-react' ,
+      title: 'الفيزياء',
+      class: 'wow fadeIn',
+      delay: '1.2s'
+    }
+  ]
+
+section
+  .books-types
+    .container
+      h2(class="wow fadeInDown") فئات الكتب
+      .row.types-content
+        each typee in types
+          .col-lg-4.col-md-6
+            .type(class= typee.class , data-wow-delay= typee.delay)
+              i(class= typee.icon)
+              p #{typee.title}
+      a.site-btn.light.r-15.more(href="" class="wow fadeIn") تصفح المزيد

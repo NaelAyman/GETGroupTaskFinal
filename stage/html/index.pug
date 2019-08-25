@@ -1,0 +1,22 @@
+block pageTitle
+    -var pageTitle = 'index';
+<!DOCTYPE html>
+html(lang="en")
+  include layout/head
+  body
+    //- Start Page Container
+    .page-container
+      block header
+        include layout/header
+      .main-content
+        block main-content
+          include components/main-slider
+          include components/books-show
+          include components/books-types
+          include components/centerAd
+          include components/index-footer
+      block footer
+        include layout/footer
+    //- End Page Container
+
+    include layout/footer-scripts

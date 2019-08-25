@@ -1,0 +1,290 @@
+.login-page {
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+  .form {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    overflow: hidden;
+    h2 {
+      text-align: right;
+      margin-bottom: 30px;
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: $flatOrange;
+      position: relative;
+      padding-right: 20px;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $flatOrange;
+        transform: translateY(-50%);
+      }
+    }
+    .form-group {
+      position: relative;
+      margin: 3rem 0 1rem;
+      label {
+        font-weight: bold;
+        color: #004d61;
+        position: absolute;
+        top: -30px;
+        transition: all 0.3s ease-in-out;
+      }
+      .form-control {
+        &:focus {
+          border-color: $flatOrange;
+          ~ label {
+            top: -15px;
+            right: 15px;
+            background-color: #fff;
+            color: $flatOrange;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    .login-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      a {
+        &.forget {
+          text-decoration: underline;
+        }
+      }
+    }
+    .login-social {
+      h5 {
+        font-size: 20px;
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        li {
+          a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid #3b5998;
+            border-radius: 50%;
+            margin: 0 5px;
+            font-size: 18px;
+            color: #3b5998;
+            &:hover {
+              color: $white;
+              background-color: #3b5998;
+            }
+          }
+          &:first-child {
+            a { 
+              color: #1da1f2;
+              border: 1px solid #1da1f2;
+              &:hover {
+                color: $white;
+                background-color: #1da1f2;
+              }
+            }
+          }
+          &:nth-child(2) {
+            a { 
+              color: #f35022;
+              border: 1px solid #f35022;
+              &:hover {
+                color: $white;
+                background-color: #f35022;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sign-up-link {
+      border-top: 1px solid #ddd;
+      margin-top: 15px;
+      padding: 20px 0 0;
+      p {
+        margin: 0;
+        a {
+          margin: 0 10px;
+          text-decoration: underline;
+        }
+      }
+    }
+    .site-btn {
+      &.more {
+        width: 100px;
+        margin: 0;
+        i {
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+    &.sign-level {
+      overflow: initial;
+      .form-group {
+        height: 50px;
+        &.file {
+          height: auto;
+        }
+        label {
+          span {
+            display: block;
+            font-size: 12px;
+            color: #ff502f;
+            margin: 5px 0;
+          }
+        }
+        .nice-select {
+          width: 100%;
+          text-align: right !important;
+          padding-left: 30px !important;
+          padding-right: 30px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 16px;
+          &:after {
+            left: 12px !important;
+            right: auto !important;
+            width: 8px;
+            height: 8px;
+          }
+          &.open {
+            .list {
+              width: 100%;
+              z-index: 5;
+              li {
+                text-align: right;
+              }
+            }
+          }
+          &:focus {
+            border-color: $flatOrange;
+            + label {
+              color: $flatOrange;
+            }
+          }
+        }
+        .img-block {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          .gallery {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 40px 0 0;
+            .images {
+              width: 100px;
+              height: 100px;
+              overflow: hidden;
+              margin: 10px;
+              position: relative;
+              img {
+                height: 100%;
+              }
+              .close {
+                bottom: auto;
+                top: 0;
+                right: 0;
+                opacity: 1;
+                font-size: 18px;
+                position: absolute;
+                i {
+                  color: $flatRedAlt;
+                }
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+          }
+        }
+
+        .upload-img {
+          position: relative;
+          border: 0 !important;
+          background: none !important;
+          padding: 0 !important;
+          width: auto !important;
+          height: auto !important;
+          font-size: initial !important;
+          margin: 40px 0 0;
+        }
+        .upload-img {
+          input {
+            position: absolute;
+            opacity: 0;
+            z-index: 9;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            top: 0;
+          }
+          i {
+            background-color: $flatBlue;
+            color: $white;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            &:first-child {
+              background-color: $flatOrange;
+              color: $white;
+              width: 100px;
+              height: 100px;
+              text-align: center;
+              line-height: 100px;
+              font-size: 20px;
+              border-radius: 3px;
+              cursor: pointer;
+              margin-left: 15px;
+            }
+          }
+        }
+        #fileList {
+          ul {
+            li {
+              display: inline-block;
+              border: 1px solid #f9a21b;
+              border-radius: 3px;
+              padding: 2px 5px;
+              margin: 10px 0 10px 10px;
+              img {
+                display: none;
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .flex-btn {
+      display: flex;
+      justify-content: flex-end;
+      .more {
+        float: none;
+      }
+    }
+  }
+}

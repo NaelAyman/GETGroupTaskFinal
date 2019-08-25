@@ -1,0 +1,31 @@
+// Start Index Footer
+
+section
+  .index-footer
+    .container
+      .row
+        .col-lg-4.md-6
+          .block.work-time(class="wow fadeIn" data-wow-delay="0.2s")
+            h3.blockTitle توقيت المكتبة
+            .block-content
+              i.far.fa-clock
+              p.days-work من الأحد إلي الخميس
+              p.times-work من 7 صباحاً إلي 2 مساءً
+        .col-lg-4.md-6
+          .block.form-contact(class="wow fadeIn" data-wow-delay="0.4s")
+            h3.blockTitle راسلنا
+            .block-content
+              form(action="")
+                .form-group
+                  label(for="") أرسل مقترحاتك
+                  textarea.form-control(placeholder= "أرسل مقترحاتك")
+                button.site-btn أرسل
+        .col-lg-4.md-6
+          .block.fast-links(class="wow fadeIn" data-wow-delay="0.6s")
+            h3.blockTitle روابط سريعة
+            .block-content
+              ul
+                -for( var i = 1; i <= 5; i++)
+                  li: a(href="") الرابط #{i}
+
+// End Index Footer

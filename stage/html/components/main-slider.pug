@@ -1,0 +1,17 @@
+section
+  .main-slider
+    .slider.owl-carousel
+      -for(var i = 0; i < 3; i++ )
+        .item
+          img(src="img/slider2.jpg", alt="slider")
+    .search-form(class="wow fadeIn" data-wow-delay="0.2s")
+      form(action="")
+        .form-group
+          select.Wide(name='Selectbox' aria-invalid='false')
+            option(value='First one') كل الفئات
+            option(value='Second One') مكتبتي
+            option(value='Third one') كل الفئات
+          input.form-control(type="text" placeholder="عنوان الكتاب ...")
+          button.site-btn
+            i.fas.fa-search
+
